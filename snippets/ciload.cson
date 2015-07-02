@@ -1,0 +1,35 @@
+'.php':
+  'Load View':
+    'prefix': 'clv'
+    'body': """
+               $this->load->view('${1:viewname}');
+               $0
+               """
+
+  'Load View with data':
+    'prefix': 'clvd'
+    'body': """
+               $this->load->view('${1:viewname}', ${2:$data});
+               $0
+               """
+
+  'Load Model':
+    'prefix': 'clm'
+    'body': """
+               $this->load->model('${1:model}');
+               $0
+               """
+
+  'Load helper':
+    'prefix': 'clh'
+    'body': """
+               $this->load->helper('${1:helper}'');
+               $0
+               """
+
+  'Load library':
+    'prefix': 'cll'
+    'body': """
+               $this->load->library('${1:library}');
+               $0
+               """
