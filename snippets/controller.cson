@@ -11,10 +11,6 @@
           parent::__construct();
         }
 
-        /**
-        * @author $3
-        * @params $4
-        */
         function index()
         {
           $0

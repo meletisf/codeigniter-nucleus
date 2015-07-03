@@ -1,14 +1,10 @@
 {
   "name": "codeigniter-nucleus",
   "main": "./lib/codeigniter-nucleus",
-  "version": "0.3.2",
+  "version": "0.0.0",
+  "owner": "FlevasGR",
   "description": "Codeigniter snippets for quick typing",
-  "keywords": [
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/FlevasGR/codeigniter-nucleus/"
-  },
+  "repository": "https://github.com/FlevasGR/codeigniter-nucleus/",
   "readme": "# CodeIgniter Nucleus for Atom.io\n Nucleus is a snippet collection for the PHP framework CodeIgniter. With this plugin you can speed up your development time drastically. \n\n\n # Links \n + Download Codeigniter: http://www.codeigniter.com/download\n + Codeigniter Docs: http://www.codeigniter.com/docs\n + Codeigniter Forum: http://forum.codeigniter.com/\n",
   "readmeFilename": "README.md",
   "bugs": {
@@ -18,7 +14,5 @@
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {
   }
 }

@@ -2,3 +2,35 @@
   'Codeigniter Anchor':
     'prefix': 'can'
     'body': "anchor('${1:url}', '${2:linkname}');$0"
+  'Documentation':
+    'prefix': 'doc'
+    'body': """
+               /**
+               * @param ${1:datatype} $${2:$var} ${3:description}
+               * @return ${4:datatype}
+               */
+               $0 """
+  'Public function':
+    'prefix': 'publf'
+    'body': """
+               public function ${1:name}(${2})
+               {
+                   ${0:#code}
+               }
+               """
+  'Private function':
+    'prefix': 'prvf'
+    'body': """
+               private function ${1:name}(${2})
+               {
+                   ${0:#code}
+               }
+               """
+ 'Protected function':
+   'prefix': 'prtf'
+   'body': """
+              protected function ${1:name}(${2})
+              {
+                  ${0:#code}
+              }
+              """
