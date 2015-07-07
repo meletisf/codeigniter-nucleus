@@ -2,24 +2,23 @@
   'Load CI View':
     'prefix': 'clv'
     'body': """
-               $this->load->view('${1:viewname}');
-               $0
+               $this->load->view('${1:viewname}');$0
                """
 
   'Load CI Model':
     'prefix': 'clm'
     'body': """
-               $this->load->model('${1:model}');
+               $this->load->model('${1:modelname}');$0
                """
 
   'Load CI Helper':
     'prefix': 'clh'
     'body': """
-               $this->load->helper('${1:helper}');
+               $this->load->helper('${1:helpername}');$0
                """
 
   'Load CI Library':
     'prefix': 'cll'
     'body': """
-               $this->load->library('${1:library}');
+               $this->load->library('${1:libraryname}');$0
                """

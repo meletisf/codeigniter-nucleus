@@ -2,14 +2,13 @@
   'Codeigniter Anchor':
     'prefix': 'can'
     'body': "anchor('${1:url}', '${2:linkname}');$0"
-  'Documentation':
+  'New Documentation':
     'prefix': 'doc'
     'body': """
                /**
                * @param ${1:datatype} $${2:$var} ${3:description}
                * @return ${4:datatype}
-               */
-               $0 """
+               */ $0 """
   'Public function':
     'prefix': 'publf'
     'body': """
@@ -26,11 +25,14 @@
                    ${0:#code}
                }
                """
- 'Protected function':
-   'prefix': 'prtf'
-   'body': """
+  'Protected function':
+    'prefix': 'prtf'
+    'body': """
               protected function ${1:name}(${2})
               {
                   ${0:#code}
               }
               """
+  '$this':
+    'prefix': 'this'
+    'body': '$this->$0'
