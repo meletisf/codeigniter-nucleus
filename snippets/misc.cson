@@ -10,7 +10,7 @@
                * @return ${4:datatype}
                */ $0 """
   'Public function':
-    'prefix': 'publf'
+    'prefix': 'public'
     'body': """
                public function ${1:name}(${2})
                {
@@ -18,7 +18,7 @@
                }
                """
   'Private function':
-    'prefix': 'prvf'
+    'prefix': 'private'
     'body': """
                private function ${1:name}(${2})
                {
@@ -26,7 +26,7 @@
                }
                """
   'Protected function':
-    'prefix': 'prtf'
+    'prefix': 'protected'
     'body': """
               protected function ${1:name}(${2})
               {
@@ -36,3 +36,9 @@
   '$this':
     'prefix': 'this'
     'body': '$this->$0'
+  'redirect()':
+    'prefx': 'redirect'
+    'body': 'redirect()$0'
+  'base_url()':
+    'prefix': 'base'
+    'body': 'base_url()$0'
